@@ -1,6 +1,6 @@
 import os
 
-PORT_NUMBER = 5002
+PORT_NUMBER = 5007
 
 MODEL_FILE_PATH = os.path.join("project_app",'model.pickle')
 
