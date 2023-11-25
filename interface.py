@@ -32,7 +32,7 @@ def get_insurance_charges():
 
     med_ins = MedicalInsurance(age,sex,bmi,children,smoker,region)
     charges  = med_ins.get_predict_chagres()
-    return jsonify({"insrance price": f"DEAR CUSTOMER ,YES You will get medical insurance {np.round(charges[0],2)}"})
+    return jsonify({"insrance price": f"DEAR CUSTOMER ,YES You will get medical insurance Rupees {np.round(charges[0],2)} /-"})
 
 
 
