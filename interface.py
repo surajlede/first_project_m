@@ -7,9 +7,9 @@ from project_app.utils import MedicalInsurance
 app = Flask(__name__)
 
 
-@app.route('/',methods =['GET']) # HOme API
+@app.route('/',methods =['GET','POST']) 
 def my_fun():
-    print("Hello Flask")
+    
     return render_template('index.html')
 
 
@@ -38,7 +38,7 @@ def get_insurance_charges():
 
 
 
-app.run(port = config.PORT_NUMBER,debug = False ,host='0.0.0.0' ) # Server Start
+app.run(port = config.PORT_NUMBER,debug = False ,host='0.0.0.0' ) 
 
 
 
